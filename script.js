@@ -91,7 +91,8 @@ function typewriter() {
 }
 
 window.onload = () => {
-  if (location.pathname == "/index.html"||location.pathname=="/"||location.pathname==""||location.pathname=="/PersonalWebsite/") {
+  //had to add these because these are all the locations different hostings may show as per needed, if i dont add this if statement error will be generated in other html ones where i am not importing cdn of typeIt
+  if (location.pathname == "/index.html"||location.pathname=="/"||location.pathname==""||location.pathname=="/PersonalWebsite/"||location.pathname == "/index.html/") {
     typewriter();
   }
 };
